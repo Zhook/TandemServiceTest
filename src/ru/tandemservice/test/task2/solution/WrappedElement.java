@@ -12,7 +12,7 @@ public class WrappedElement implements Comparable<WrappedElement> {
     final IElement element;
     WrappedElement patient;
     WrappedElement donor;
-    boolean inList = false;
+    boolean sorted = false;
 
     public WrappedElement(IElement element) {
         this.element = element;

@@ -9,7 +9,7 @@ public class Test2 {
 
     final static LinkedList<Long> RESULT = new LinkedList<>();
     final static int SIZE = 1_000_000;
-    final static int ROUND = 100;
+    final static int ROUND = 10;
 
     public static void main(String args[]) {
         Sorter sorter = new Sorter();
@@ -38,12 +38,10 @@ public class Test2 {
         int[] numbers = new int[10 * size];
         for (int i = 0; i < 10 * size; i++) {
             numbers[i] = Integer.MIN_VALUE + i * (2 * (Integer.MAX_VALUE / size - 1));
-            //numbers[i] = i;
         }
 
 //        int[] numbers = new int[size];
 //        for (int i = 0; i < size; i++) {
-//            //numbers[i] = Integer.MIN_VALUE + i * (2 * (Integer.MAX_VALUE / size - 1));
 //            numbers[i] = i;
 //        }
 

@@ -9,11 +9,11 @@ import java.util.List;
  * В худшем случае O(n), в лучшем O(0).
  */
 public class NumberFinder {
-    final List<IElement> elements;
+    final List<WrappedElement> elements;
     int number = Integer.MIN_VALUE;
     int index = 0;
 
-    public NumberFinder(List<IElement> elements) {
+    public NumberFinder(List<WrappedElement> elements) {
         this.elements = elements;
     }
 
@@ -24,7 +24,7 @@ public class NumberFinder {
             return number;
         }
         for (; index < elements.size(); index++) {
-            if (number != elements.get(index).getNumber())
+            if (number != elements.get(index).element.getNumber())
                 break;
             number++;
         }

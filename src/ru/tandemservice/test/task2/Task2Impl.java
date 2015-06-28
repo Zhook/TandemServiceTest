@@ -31,7 +31,7 @@ public class Task2Impl implements IElementNumberAssigner {
 //      Общая сложность O(n*log(n)), по памяти O(n)
 //      При "дорогой" записи и небольших n сложность O(n).
 //      Количество вызовов setupNumber (n + количество цепочек)
-//      Худший вариант 1.5*n вызовов setupNumber если список требует порпарную замену всех элементов
+//      Худший вариант 1.5*n вызовов setupNumber если список требует попарную замену всех элементов
 //      В среднем n вызовов setupNumber.
 
         Sorter sorter = new Sorter();
